@@ -22,7 +22,12 @@ const Experience = () => {
   >
 <div><h3  className='text-white text-[24px] font-bold'>{experience.title}</h3>
 <p className='font-semibold  text-secondary text-[16px]' style={{margin:0}}>{experience.company_name}</p>
-<p style={{color:'#94a3b8'}}>{experience.points}</p>
+{/* <p style={{color:'#94a3b8'}}>{experience.points}</p> */}
+<ul className='mt-5 list-disc space-y-2'>
+{experience.points.map((elem)=>(
+  <li className='tracking-wider text-[14px]' style={{color:'rgb(204, 212, 223)'}}>{elem}</li>
+))}
+</ul>
 </div>  
 </VerticalTimelineElement>
 
