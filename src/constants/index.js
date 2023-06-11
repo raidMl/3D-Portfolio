@@ -13,7 +13,8 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
+    php,
+    rbootstrap,
     docker,
     meta,
     starbucks,
@@ -106,8 +107,12 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "php",
+      icon: php,
+    },
+    {
+      name:"rbootstrap",
+      icon:rbootstrap,
     },
     {
       name: "docker",
@@ -199,9 +204,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "membership",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform which use for access of members we can used in any big company or university  ...etc",
       tags: [
         {
           name: "react",
@@ -218,11 +223,12 @@ import {
       ],
       image: carrent,
       source_code_link: "https://github.com/",
+      weburl:"",
     },
     {
-      name: "Job IT",
+      name: "e-commerce",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that enables users to bue products online with dashboard of admin.",
       tags: [
         {
           name: "react",
@@ -239,11 +245,13 @@ import {
       ],
       image: jobit,
       source_code_link: "https://github.com/",
+      weburl:"",
+
     },
     {
       name: "Trip Guide",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "playstation 4 user interface .",
       tags: [
         {
           name: "nextjs",
@@ -260,6 +268,8 @@ import {
       ],
       image: tripguide,
       source_code_link: "https://github.com/",
+      weburl:"",
+
     },
   ];
   

@@ -4,12 +4,14 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import weburlimg from "./link.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
+// import figma from "./tech/figma.png";
+import php from './tech/php(1).png'
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -20,6 +22,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import rbootstrap from './tech/rbootstrap(1).png'
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -37,11 +40,14 @@ export {
   mobile,
   web,
   github,
+  weburlimg,
   menu,
   close,
   css,
   docker,
-  figma,
+  // figma,
+  rbootstrap,
+  php,
   git,
   html,
   javascript,
