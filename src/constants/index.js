@@ -22,8 +22,15 @@ import {
     shopify,
     carrent,
     jobit,
+    Membership,
+     rdesign,
+     upwork,
     tripguide,
     threejs,
+    github,
+    zakati,
+    MoyenCalc,
+    DigitalAgency
   } from "../assets";
   
   export const navLinks = [
@@ -122,11 +129,23 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Web Developer",
+      company_name: "meta",
+      icon: meta,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: " 2019 - Jan 2021",
+      points: [
+        "Developing and maintaining web applications using php laravel html css js jquery  and other related technologies.",
+        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },  {
+      title: "React.js Developer",
+      company_name: "Github",
+      icon: github,
+      iconBg: "#383E56",
+      date: "March 2021 - April 2023",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -136,38 +155,26 @@ import {
     },
     {
       title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      company_name: "R-design",
+      icon: rdesign,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Jan 2022 - Feb 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using React native and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+  
     {
       title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      company_name: "upwork",
+      icon: upwork,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Jan 2021 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using Mern Stack and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
@@ -206,8 +213,10 @@ import {
     {
       name: "membership",
       description:
+        // "Web-based platform which use for access of members we can used in any big company or university  ...etc",
         "Web-based platform which use for access of members we can used in any big company or university  ...etc",
-      tags: [
+
+        tags: [
         {
           name: "react",
           color: "blue-text-gradient",
@@ -221,7 +230,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: Membership,
       source_code_link: "https://github.com/",
       weburl:"",
     },
@@ -249,7 +258,30 @@ import {
 
     },
     {
-      name: "Trip Guide",
+      name: "zakati",
+      description:
+        "calculate zakat for .",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: zakati,
+      source_code_link: "https://github.com/",
+      weburl:"",
+
+    },
+    {
+      name: "play4 ui",
       description:
         "playstation 4 user interface .",
       tags: [
@@ -267,6 +299,121 @@ import {
         },
       ],
       image: tripguide,
+      source_code_link: "https://github.com/",
+      weburl:"",
+
+    },
+    {
+      name: "Digital Agency",
+      description:
+        "website for agency services .",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: DigitalAgency,
+      source_code_link: "https://github.com/raidMl/raid_dev",
+      weburl:"https://raidml.github.io/raid_dev/",
+
+    },
+    {
+      name: "Ess",
+      description:
+        "football website  .",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tripguide,
+      source_code_link: "https://github.com/",
+      weburl:"",
+
+    },
+    {
+      name: "Ess",
+      description:
+        "football website  .",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tripguide,
+      source_code_link: "https://github.com/",
+      weburl:"",
+
+    },
+    {
+      name: "Ess",
+      description:
+        "football website  .",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tripguide,
+      source_code_link: "https://github.com/",
+      weburl:"",
+
+    },
+    {
+      name: "Moyen calculator",
+      description:
+        "web app for calculate moyen  .",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: MoyenCalc,
       source_code_link: "https://github.com/",
       weburl:"",
 

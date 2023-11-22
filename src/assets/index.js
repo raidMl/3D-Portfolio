@@ -28,10 +28,23 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import upwork from './company/upwork.svg'
+import rdesign from './company/r-design.jpg'
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import Membership from './Membership.png';
+import Ecomerce from './Membership.png';
+import todo from './Membership.png';
+import FootBloger from './Membership.png';
+import zakati from './zakati.png';
+import MoyenCalc from './moyen-calc.png';
+import weather from './weather.png';
+import DigitalAgency from './digital-agency.jpeg';
+
+
 
 export {
   logo,
@@ -61,8 +74,15 @@ export {
   meta,
   shopify,
   starbucks,
+  upwork,
+  rdesign,
   tesla,
   carrent,
   jobit,
   tripguide,
+  Membership,
+  zakati,
+  MoyenCalc,
+  weather,
+  DigitalAgency
 };
