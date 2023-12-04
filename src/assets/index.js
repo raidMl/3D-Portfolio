@@ -36,14 +36,17 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import Membership from './Membership.png';
-import Ecomerce from './Membership.png';
-import todo from './Membership.png';
-import FootBloger from './Membership.png';
+
 import zakati from './zakati.png';
 import MoyenCalc from './moyen-calc.png';
 import weather from './weather.png';
-import DigitalAgency from './digital-agency.jpeg';
 
+import play5 from './play5.png'
+import DigitalAgency from './digital-agency.jpeg';
+import Ecomerce from './moyen-calc.png';
+import todo from './moyen-calc.png';
+import FootBloger from './moyen-calc.png';
+import hotelR  from './moyen-calc.png';
 
 
 export {
@@ -84,5 +87,10 @@ export {
   zakati,
   MoyenCalc,
   weather,
-  DigitalAgency
+  DigitalAgency,
+  todo,
+  play5,
+  hotelR,
+  FootBloger,
+  Ecomerce
 };

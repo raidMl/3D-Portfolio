@@ -30,7 +30,14 @@ import {
     github,
     zakati,
     MoyenCalc,
-    DigitalAgency
+    DigitalAgency,
+    weather,
+
+    // todo,
+    play5,
+    // hotelR,
+    // FootBloger,
+    // Ecomerce
   } from "../assets";
   
   export const navLinks = [
@@ -248,7 +255,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "js",
           color: "pink-text-gradient",
         },
       ],
@@ -260,46 +267,46 @@ import {
     {
       name: "zakati",
       description:
-        "calculate zakat for .",
+        "for calculate zakat  .",
       tags: [
         {
-          name: "nextjs",
+          name: "html",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "js",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "jquery",
           color: "pink-text-gradient",
         },
       ],
       image: zakati,
-      source_code_link: "https://github.com/",
-      weburl:"",
+      source_code_link: "https://github.com/raidMl/zakat-site",
+      weburl:"https://raidml.github.io/zakat-site/",
 
     },
     {
-      name: "play4 ui",
+      name: "play5 UI",
       description:
-        "playstation 4 user interface .",
+        "playstation 5 user interface .",
       tags: [
         {
-          name: "nextjs",
+          name: "reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "tailwind",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "typescript",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: play5,
+      source_code_link: "https://github.com/raidMl/Playstation5-ui",
       weburl:"",
 
     },
@@ -309,11 +316,11 @@ import {
         "website for agency services .",
       tags: [
         {
-          name: "nextjs",
+          name: "bootstrap",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "js",
           color: "green-text-gradient",
         },
         {
@@ -332,15 +339,15 @@ import {
         "football website  .",
       tags: [
         {
-          name: "nextjs",
+          name: "Php",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "jquery",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "js",
           color: "pink-text-gradient",
         },
       ],
@@ -350,16 +357,16 @@ import {
 
     },
     {
-      name: "Ess",
+      name: "Weather PWA",
       description:
-        "football website  .",
+        "progresive web app   .",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "api",
           color: "green-text-gradient",
         },
         {
@@ -367,26 +374,26 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-      weburl:"",
+      image: weather,
+      source_code_link: "https://github.com/raidMl/weather-pwa-app",
+      weburl:"https://weather-app-news.netlify.app/",
 
     },
     {
-      name: "Ess",
+      name: "Hotels",
       description:
-        "football website  .",
+        "desktop app for hotels  .",
       tags: [
         {
-          name: "nextjs",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "tkinter",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "sql-lite",
           color: "pink-text-gradient",
         },
       ],
@@ -401,11 +408,11 @@ import {
         "web app for calculate moyen  .",
       tags: [
         {
-          name: "nextjs",
+          name: "js",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "bootstrap",
           color: "green-text-gradient",
         },
         {
