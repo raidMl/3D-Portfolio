@@ -45,8 +45,8 @@ import play5 from './play5.png'
 import DigitalAgency from './digital-agency.jpeg';
 import Ecomerce from './moyen-calc.png';
 import todo from './moyen-calc.png';
-import FootBloger from './moyen-calc.png';
-import hotelR  from './moyen-calc.png';
+import FootBloger from './ess.png';
+import hotelR from './moyen-calc.png';
 
 
 export {
