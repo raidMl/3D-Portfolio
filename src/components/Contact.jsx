@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState,useRef } from 'react'   
+import { useState,useRef }  from 'react'   
 import {motion} from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { styles } from '../styles'  
@@ -15,15 +14,50 @@ const Contact = () => {
     message:""
   })
   const [loading,setLoading]=useState(false)
-  const handleChange=(e)=>{}
-  const handleSubmit=(e)=>{}
+  const handleChange=(e)=>{
+    setForm({...form,[e.target.name]: e.target.value  })
+
+  }
+  const sendEmail=(e)=>{
+     e.preventDefault();
+     setLoading(true)
+    // emailjs.sendForm('service_5dwzfle', 'service_5dwzfle', form.current, 'L_BHLDTAq7iXiYeLQ')
+    //   .then((result) => {
+    //       console.log(result.text);
+    //   }, (error) => {
+    //       console.log(error.text);
+    //   });
+
+    emailjs.send('service_5dwzfle', 'template_hbb4v6i',
+    {
+      from_name:form.name,
+      to_name:'RAID',
+      from_email:form.email,
+      to_email:'raidreus.21@gmail.com',
+      message:form.message
+    },'L_BHLDTAq7iXiYeLQ')
+    .then(()=>{
+      setLoading(false)
+      alert("Message Sent")
+      setForm ({name:"",email:"",message:""})
+         
+    },
+    (error)=>{
+      setLoading(false)
+      console.log(error)
+      alert("something wrong") }
+    )
+    
+
+  };
+  
   return (
     <div id='contact' className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div variants={slideIn('left','tween',0.2,1)}
        className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
-        <form action="" ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
+        <form  ref={formRef} onSubmit={sendEmail} className='mt-12 flex flex-col gap-8'>
 <label htmlFor="" className='flex flex-col'>
   <span className='text-white font-medium mb-4'> Name</span>
  <input type="text" name='name' value={form.name} onChange={handleChange}
