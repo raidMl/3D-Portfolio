@@ -217,7 +217,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "I've never met a web developer who truly cares about their clients' success like Raid.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
