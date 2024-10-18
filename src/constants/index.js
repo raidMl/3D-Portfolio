@@ -32,7 +32,10 @@ import {
   MoyenCalc,
   DigitalAgency,
   weather,
-
+// ecommerce,
+ecommerce2,
+yourDesign,
+yourTicket,
   // todo,
   play5,
   // hotelR,
@@ -64,13 +67,13 @@ const services = [
     title: "Backend Developer",
     icon: backend,
   },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
+  // {
+  //   title: "data science analyst",
+  //   icon: mobile,
+  // },
 
   {
-    title: "ui ux designer",
+    title: "Data engineer",
     icon: creator,
   },
 ];
@@ -137,7 +140,7 @@ const technologies = [
 const experiences = [
   {
     title: "Web Developer",
-    company_name: "meta",
+    company_name: "freelance",
     icon: meta,
     iconBg: "#383E56",
     date: " 2019 - Jan 2021",
@@ -147,27 +150,28 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
-  }, {
-    title: "React.js Developer",
-    company_name: "Github",
-    icon: github,
-    iconBg: "#383E56",
-    date: "March 2021 - April 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
   },
+  //  {
+  //   title: "React.js Developer",
+  //   company_name: "Github",
+  //   icon: github,
+  //   iconBg: "#383E56",
+  //   date: "March 2021 - April 2023",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
   {
-    title: "React Native Developer",
+    title: "React.js Developer",
     company_name: "R-design",
     icon: rdesign,
     iconBg: "#E6DEDD",
     date: "Jan 2022 - Feb 2023",
     points: [
-      "Developing and maintaining web applications using React native and other related technologies.",
+      "Developing and maintaining web applications using React  and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
@@ -175,11 +179,24 @@ const experiences = [
   },
 
   {
+    title: "Database instructor",
+    company_name: "institute",
+    icon: github,
+    iconBg: "#E6DEDD",
+    date: "Mar 2024 - sep 2024",
+    points: [
+      "teach Developing and maintaining web databases using popular databases and  new tech.",
+     
+    ],
+  },
+
+
+  {
     title: "Full stack Developer",
     company_name: "upwork",
     icon: upwork,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Present",
+    date: "Jan 2022 - Present",
     points: [
       "Developing and maintaining web applications using Mern Stack and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -259,9 +276,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-    weburl: "",
+    image: ecommerce2,
+    source_code_link: "https://github.com/raidMl/",
+    weburl: "https://e-marcket.netlify.app/",
 
   },
   {
@@ -307,7 +324,7 @@ const projects = [
     ],
     image: play5,
     source_code_link: "https://github.com/raidMl/Playstation5-ui",
-    weburl: "",
+    weburl: "https://play-5-ui.netlify.app/",
 
   },
   {
@@ -352,7 +369,7 @@ const projects = [
       },
     ],
     image: FootBloger,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/raidMl/",
     weburl: "",
 
   },
@@ -398,7 +415,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/raidMl/",
     weburl: "",
 
   },
@@ -423,6 +440,60 @@ const projects = [
     image: MoyenCalc,
     source_code_link: "https://github.com/raidMl/moyen-calc",
     weburl: "https://raidml.github.io/moyen-calc/",
+
+  },
+
+  {
+    name: "Your Design",
+    description:
+      "web 3d app for selling Tshirt with web assistant chatbot .",
+    tags: [
+      {
+        name: "React , Node",
+        color: "blue-text-gradient",
+      },
+     
+      {
+        name: "tailwind , Mui",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AI",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongo",
+        color: "green-text-gradient",
+      },
+    ],
+    image: yourDesign,
+    source_code_link: "https://your-designs.vercel.app/",
+    weburl: "https://github.com/raidMl/",
+
+  },
+  {
+    name: "football ticketing",
+    description:
+      "web app for selling tickets with CRM .",
+    tags: [
+      {
+        name: "PERN STACK",
+        color: "blue-text-gradient",
+      },
+     
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "pink-text-gradient",
+      },
+     
+    ],
+    image: yourTicket,
+    source_code_link: "https://github.com/raidMl/",
+    weburl: "",
 
   },
 ];

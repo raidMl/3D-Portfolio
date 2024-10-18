@@ -1,15 +1,22 @@
-import { Suspense,useState } from "react" 
+import { Suspense } from "react" 
 import { Canvas } from "@react-three/fiber" //for 3d 
 import { OrbitControls,Preload,useGLTF } from "@react-three/drei"
 import CanvasLoader from '../Loader'
+import { useState } from "react"
 
-const Pc = () => {
+const Pc = (
+  // {active,setActive}
+) => {
   const pc = useGLTF("./pc/ASUS Laptop.gltf");
   const [active, setActive] = useState(1.5)
 
+
   // const earth=useGLTF('./planet/scene.gltf')
   return (
+    // <mesh  scale={active ? 3 : 1} onClick={() => setActive(!active)} 
     <mesh  scale={active ? 3 : 1} onClick={() => setActive(!active)} 
+
+
     >
           <meshPhongMaterial color="royalblue" />
 

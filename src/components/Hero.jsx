@@ -1,10 +1,14 @@
 import { motion } from "framer-motion";
-
+import React, { useState } from "react";
 import { styles } from "../styles";
 // import { ComputersCanvas } from "./canvas";
 import PcCanvas from "./canvas/pc";
 
 const Hero = () => {
+  const [active, setActive] = useState(1.5)
+  // const canvasRef = useRef(null)
+
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -22,10 +26,21 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
           I'm a Full Stack Developer  <br className='sm:block hidden' />
           using Mern stack          </p>
+          {/* <button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded
+      " style={{zIndex:"100",marginTop:"20px"}} onClick={()=>active==1?setActive(3):setActive(1)}
+      // ref={canvasRef}
+      >
+  zoom
+</button>  */}
+<button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded 
+      " style={{marginTop:"20px",position:"absolute"}}  className="ResumeDownload"
+      // ref={canvasRef}
+      >
+Resume</button>  
         </div>
       </div>
 
-      <PcCanvas />
+   <PcCanvas style={{zIndex:'99'}} active={active} setActive={setActive}  />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

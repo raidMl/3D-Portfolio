@@ -47,6 +47,10 @@ import Ecomerce from './moyen-calc.png';
 import todo from './moyen-calc.png';
 import FootBloger from './ess.png';
 import hotelR from './moyen-calc.png';
+// import ecommerce from "./emarcket.png"
+import ecommerce2 from "./e_market.png"
+import yourTicket from "./your-ticket.png"
+import yourDesign from "./your design.png"
 
 
 export {
@@ -92,5 +96,9 @@ export {
   play5,
   hotelR,
   FootBloger,
-  Ecomerce
+  Ecomerce,
+  // ecommerce,
+  ecommerce2,
+  yourDesign,
+  yourTicket
 };
