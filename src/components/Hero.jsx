@@ -35,7 +35,9 @@ const Hero = () => {
 <button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded 
       " style={{marginTop:"20px",position:"absolute"}}  className="ResumeDownload"
       // ref={canvasRef}
-      >
+      // onClick={()=>window.open(https:"//drive.google.com/file/d/1Rn83-kn6PE_cz5YgJ07qCWPepeVbnPsy/view?usp=sharing")}
+   onClick={()=>window.open("https://drive.google.com/file/d/1Rn83-kn6PE_cz5YgJ07qCWPepeVbnPsy/view?usp=sharing")}
+   >
 Resume</button>  
         </div>
       </div>
