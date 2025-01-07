@@ -1,10 +1,9 @@
 import { useState,useRef }  from 'react'   
 import {motion} from 'framer-motion'
-import emailjs from '@emailjs/browser'
 import { styles } from '../styles'  
 import {EarthCanvas} from './canvas'
-import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import { SectionWrapper } from '../hoc'
 
 const Contact = () => {
   const formRef=useRef();
@@ -21,35 +20,33 @@ const Contact = () => {
   const sendEmail=(e)=>{
      e.preventDefault();
      setLoading(true)
-    // emailjs.sendForm('service_5dwzfle', 'service_5dwzfle', form.current, 'L_BHLDTAq7iXiYeLQ')
-    //   .then((result) => {
-    //       console.log(result.text);
-    //   }, (error) => {
-    //       console.log(error.text);
-    //   });
+      fetch('https://r-design-backend.vercel.app/api/message',{
+        method:'POST',
+        headers:{
+          'Content-Type':'application/json'
+        },
+        body:JSON.stringify({email:form.email,message:"name is: "+form.name+
+          " message is: "+form.message})
+      }).then(res=>res.json())
+      .then(data=>{
+        console.log(data)
+        alert("Message sent successfully")
+        setLoading(false)
+        setForm({
+          name:"",
+          email:"",
+          message:""
+        })
+        formRef.current.reset()
+      }).catch(err=>{
+        console.log(err)
+        setLoading(false)
+        alert("Message failed to send")
+      })
+  }
 
-    emailjs.send('service_5dwzfle', 'template_hbb4v6i',
-    {
-      from_name:form.name,
-      to_name:'RAID',
-      from_email:form.email,
-      to_email:'raidreus.21@gmail.com',
-      message:form.message
-    },'L_BHLDTAq7iXiYeLQ')
-    .then(()=>{
-      setLoading(false)
-      alert("Message Sent")
-      setForm ({name:"",email:"",message:""})
-         
-    },
-    (error)=>{
-      setLoading(false)
-      console.log(error)
-      alert("something wrong") }
-    )
-    
-
-  };
+   
+  
   
   return (
     <div id='contact' className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
