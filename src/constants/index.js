@@ -346,8 +346,8 @@ const projects = [
       },
     ],
     image: DigitalAgency,
-    source_code_link: "https://github.com/raidMl/raid_dev",
-    weburl: "https://raidml.github.io/raid_dev/",
+    source_code_link: "https://github.com/raidMl/",
+    weburl: "https://raidml.github.io/r.design/",
 
   },
   {
@@ -467,8 +467,8 @@ const projects = [
       },
     ],
     image: yourDesign,
-    source_code_link: "https://your-designs.vercel.app/",
-    weburl: "https://github.com/raidMl/",
+    weburl: "https://your-designs.vercel.app/",
+    source_code_link: "https://github.com/raidMl/",
 
   },
   {
