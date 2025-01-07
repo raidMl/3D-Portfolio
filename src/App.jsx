@@ -1,10 +1,15 @@
-import { useState } from 'react'
+import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import {About,Contact,Experience,Feedbacks,Hero,Navbar,Tech,Works,StarsCanvas} from './components'
+// use lazy loading
+
+// const ReactLoader = React.lazy(() => import('./components/ReactLoader'))
+ 
+
+
 import ReactLoader from './components/ReactLoader'
 // import Mac from './components/macbook/Mac'
 const App=()=> {
-  // const [count, setCount] = useState(0)
 
   return (
     <>
@@ -22,7 +27,6 @@ const App=()=> {
         <Experience/>
         <Tech/>
         <div style={{height:"100vh" ,width:"auto"}}>        <ReactLoader/></div>
-        {/* <div style={{height:"100vh" ,width:"auto"}}>        <Mac/></div> */}
 
 
         <Works/>
