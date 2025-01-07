@@ -25,7 +25,7 @@ const Experience = () => {
 {/* <p style={{color:'#94a3b8'}}>{experience.points}</p> */}
 <ul className='mt-5 list-disc space-y-2'>
 {experience.points.map((elem)=>(
-  <li className='tracking-wider text-[14px]' style={{color:'rgb(204, 212, 223)'}}>{elem}</li>
+  <li className='tracking-wider text-[14px]' key={elem} style={{color:'rgb(204, 212, 223)'}}>{elem}</li>
 ))}
 </ul>
 </div>  

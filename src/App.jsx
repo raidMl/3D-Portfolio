@@ -8,7 +8,6 @@ import {About,Contact,Experience,Feedbacks,Hero,Navbar,Tech,Works,StarsCanvas} f
 
 
 import ReactLoader from './components/ReactLoader'
-// import Mac from './components/macbook/Mac'
 const App=()=> {
 
   return (

@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { styles } from "../styles";
-// import { ComputersCanvas } from "./canvas";
 import PcCanvas from "./canvas/pc";
 
 const Hero = () => {
   const [active, setActive] = useState(1.5)
-  // const canvasRef = useRef(null)
 
 
   return (
@@ -26,16 +24,10 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
           I'm a Full Stack Developer  <br className='sm:block hidden' />
           using Mern stack          </p>
-          {/* <button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded
-      " style={{zIndex:"100",marginTop:"20px"}} onClick={()=>active==1?setActive(3):setActive(1)}
-      // ref={canvasRef}
-      >
-  zoom
-</button>  */}
-<button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded 
+   
+<button  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded 
       " style={{marginTop:"20px",position:"absolute"}}  className="ResumeDownload"
-      // ref={canvasRef}
-      // onClick={()=>window.open(https:"//drive.google.com/file/d/1Rn83-kn6PE_cz5YgJ07qCWPepeVbnPsy/view?usp=sharing")}
+     
    onClick={()=>window.open("https://drive.google.com/file/d/1Rn83-kn6PE_cz5YgJ07qCWPepeVbnPsy/view?usp=sharing")}
    >
 Resume</button>  
